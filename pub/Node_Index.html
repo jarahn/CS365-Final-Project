@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-
     <div id="navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -21,16 +19,48 @@
             <li><a href="mongo_index.html">MongoDB</a></li>
         </ul>
     </div>
+    <a href="https://nodejs.org/en/" target="_blank">
+        <img src="https://miro.medium.com/max/600/1*4_n18FH8hRrvlLyRufD1sQ.png">
+    </a>
     
-    <h1 class= "navBar">H1 should be the same for every page since its going to be the navigation bar</h1>
+    <h1 class= "title">Node JS</h1>
+   
+    <p class="descrip">Node is a free, open source JavaScript runtime environment. 
+        It allows for Javascript to be executed outside of the the browser, 
+        allowing for us to create non blocking asyncronous applications.
+        This is done by using a singular thread to talk between a server/database, the clients and an event queue.
+        The thread checks the event queue to know when the server/database has returned.
+        Node js is great for building IO heavy applications or when you know you need to access the database often.
+    </p>
+    
+    <h2 class="infoTitle">Node setup, Package manager and installation</h2>
+    <div id="nodeSetup">
+        <ul>
+            <li><a href="https://nodejs.org/en/download/" target="_blank">1. Download the latest version of node, or check to see if you have with "node -v" in the command line</a></li>
+            <li>2. Node uses a package manager titled "node package manager" NPM for short. In order to start a project we have to initialize our project for node.
+                <br>
+                This is done with the cmd "NPM init", it creates a json file in the working directory with all the information node needs to function.
+            </li>
+            <li>3.Now that we have node installed and initialized we can download any other libraries we want with the NPM command.
+                <br>
+                A great example is the "express" library. "NPM install express" will add all related setup info for the express library into the json file that init created.
+            </li>
+            <li></li>
+        </ul>
+    </div>
+    <p class="info">use a vue list here instead maybe?</p>
+    <h2>Express</h2>
+    <p>Express is a node js web application framework</p>
 
-    <h2 class="title">Node.js!</h2>
+    <h2>Pros and Cons</h2>
+    <p class="info">Pros: Scalability, use of Javascript, Large amount of open source downloadables, great for IO heavy apps</p>
+    <p class="info">Cons: not good for CPU heavy apps(video or images) this is bc node is single threaded and has t owait while it does calculations </p>
+    
+    <h2>Companies that utilize Node</h2>
+    <p class="info">Paypal</p>
 
-    <p class="information">starter information for node</p>
-    
-    <h3 class="infoTitle">Node setup, Package manager and installation</h3>
-    
-    <p class="information">node install, NPM init, install etc</p>
+    <h2>Similar Tech</h2>
+    <p class="info">asp.net, Django</p>
     
 </body>
 

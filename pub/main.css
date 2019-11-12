@@ -30,6 +30,6 @@ li a:hover:not(.active) {
 /*
 This doesn't highlight the current tab the user is on - ideally should fix
 */
-.active {
-    background-color: rgb(1, 17, 105);
+.active{
+    background-color: rgb(107, 122, 207);
 }
