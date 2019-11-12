@@ -33,3 +33,14 @@ This doesn't highlight the current tab the user is on - ideally should fix
 .active{
     background-color: rgb(107, 122, 207);
 }
+
+.info{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#nodePage{
+    background-color: rgb(100, 205, 100);
+
+}
