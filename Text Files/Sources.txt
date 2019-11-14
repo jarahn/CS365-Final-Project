@@ -6,3 +6,9 @@ https://www.w3schools.com/css/css_navbar.asp
 
 "Vue information"
 https://vuejs.org/v2/guide/
+
+"Jquery Information"
+https://jquery.com/
+
+"Node Information"
+https://nodejs.org/en/
