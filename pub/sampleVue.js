@@ -1,3 +1,6 @@
+//TODO: turn this into a basic single client connect 4 game
+    //To be displayed on the vue_index page.
+
 var vm = new Vue({
     el: "#app", //Element in the HTML we are hooking up with
     data: {
