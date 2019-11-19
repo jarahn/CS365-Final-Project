@@ -2,8 +2,9 @@
 var socket = io();
 
 $( document ).ready(function() {
-    $("#Books").click(function(){
+    $("#allBooks").click(function(){
         socket.emit("getBooks");
+
 
     });
 
