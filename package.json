@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/jarahn/CS365-Final-Project#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongodb": "^3.3.4",
+    "socket.io": "^2.3.0"
   }
 }

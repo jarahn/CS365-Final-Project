@@ -28,6 +28,7 @@ function sendAllBooksToClient(theSocket) {
 }
 
 
+
 socket.on("getBooks", function() {
     console.log("Got call to getBooks");
     // talk to the database and get the list of books, send it back to the client.
