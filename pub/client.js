@@ -1,9 +1,16 @@
 //Will contain all client side code
 $( document ).ready(function() {
-    $("#Books").click(function(){
+    $("#allBooks").click(function(){
         socket.emit("getBooks");
 
+
     });
+
+    $("#Books").click(function(){
+        socket.emit("findBooks",$("#inputBooks".val()));
+
+    });
+    
 
 
 
