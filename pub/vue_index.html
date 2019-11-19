@@ -48,7 +48,14 @@
 
     <!--The elements that connect to the sample vue app will go here-->
     <div id="app">
-
+        <div class="table">
+            <div v-for="(row,r) of gameB" class="row">
+                <div v-for="(cell,c) of row" v-on:click="cellClicked(r,c)" class="col">
+                    <span v-if="cell==1">R</span>
+                    <span v-if="cell==-1">B</span>
+                </div>
+            </div>
+        </div>
 
 
         
