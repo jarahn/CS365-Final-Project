@@ -17,7 +17,7 @@ app.use(express.static("pub"));
 
 //If we want a button for the user that will display all available books we can use this function to get them from the DB
 function sendAllBooksToClient(theSocket) {
-	db.collection("Book List").find({}, {sort: [['title', 1]]}).toArray(function(error, documents) {
+	db.collection("Book List").find({}, {sort: [['Link', 1]]}).toArray(function(error, documents) {
 		if (error != null) {
 			console.log(error);
 		}
@@ -26,3 +26,10 @@ function sendAllBooksToClient(theSocket) {
 		}
 	});
 }
+
+
+socket.on("getBooks", function() {
+    console.log("Got call to getBooks");
+    // talk to the database and get the list of books, send it back to the client.
+    sendAllBooksToClient(socket);
+});
