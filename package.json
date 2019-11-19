@@ -1,0 +1,23 @@
+{
+  "name": "cs365-final-project",
+  "version": "1.0.0",
+  "description": "a dictionary for cs 365",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarahn/CS365-Final-Project.git"
+  },
+  "author": "Peter Paisley and Jacob Rahn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jarahn/CS365-Final-Project/issues"
+  },
+  "homepage": "https://github.com/jarahn/CS365-Final-Project#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
