@@ -1,19 +1,13 @@
 //Will contain all client side code
+var socket = io();
+
 $( document ).ready(function() {
     $("#Books").click(function(){
         socket.emit("getBooks");
 
     });
 
-
-
-    
-
-
-
 });
-
-var socket = io();
 
 
 socket.on("setBookList", function(bookList) {

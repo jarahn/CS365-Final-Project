@@ -1,3 +1,6 @@
+//mongod is not working
+//Trying to get the server running, connect with it, and search the db
+
 //Stuff for MongoDB
 var mongodb = require("mongodb");
 var MongoClient = mongodb.MongoClient;
@@ -26,6 +29,19 @@ function sendAllBooksToClient(theSocket) {
 	});
 }
 
+
+//how do we specify where our search is looking (ex: in the keywords not the links)?
+function sendSearchToClient(theSocket, search) {
+	db.collection("Book List").find({search}, {sort: [['Link', 1]]}).toArray(function(error, documents) {
+		if (error != null) {
+			console.log(error);
+		}
+		else {
+			theSocket.emit("setBookList", documents);
+		}
+	});
+}
+
 io.on("connection", function(socket) {
 	console.log("Somebody connected.");
 
@@ -38,6 +54,12 @@ io.on("connection", function(socket) {
 		console.log("Got call to getBooks");
 		// talk to the database and get the list of books, send it back to the client.
 		sendAllBooksToClient(socket);
+	});
+
+	socket.on("findBooks", function(searchTerms) {
+		console.log("Got call to search for specific books (findBooks)");
+		sendSearchToClient(socket, searchTerms);
+
 	});
 
 });
