@@ -5,9 +5,8 @@ $( document ).ready(function() {
     $("#allBooks").click(function(){
         console.log("Button clicked!");
         socket.emit("getBooks");
-
-
     });
+    
 
 });
 
