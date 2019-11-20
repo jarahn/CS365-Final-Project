@@ -32,7 +32,7 @@ function sendAllBooksToClient(theSocket) {
 
 //how do we specify where our search is looking (ex: in the keywords not the links)?
 function sendSearchToClient(theSocket, search) {
-	db.collection("Book List").find({search}, {sort: [['Link', 1]]}).toArray(function(error, documents) {
+	db.collection("Book List").find({Keywords: search}, {sort: [['Link', 1]]}).toArray(function(error, documents) {
 		if (error != null) {
 			console.log(error);
 		}
@@ -68,7 +68,7 @@ io.on("connection", function(socket) {
 client.connect(function(err) {
 	if (err != null) throw err; //No DB connection?  Then let our server crash with an error.
 	else {
-		db = client.db("bookStore"); //Get our specific database
+		db = client.db("Books"); //Get our specific database
 
 		//Start listening for client connections
 		server.listen(80, function() {
