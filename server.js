@@ -32,6 +32,7 @@ function sendAllBooksToClient(theSocket) {
 
 //how do we specify where our search is looking (ex: in the keywords not the links)?
 function sendSearchToClient(theSocket, search) {
+
 	db.collection("Book List").find({Keywords: search}, {sort: [['Link', 1]]}).toArray(function(error, documents) {
 		if (error != null) {
 			console.log(error);
@@ -40,6 +41,12 @@ function sendSearchToClient(theSocket, search) {
 			theSocket.emit("setBookList", documents);
 		}
 	});
+}
+
+function parseSearch(searchInput){
+
+
+
 }
 
 io.on("connection", function(socket) {

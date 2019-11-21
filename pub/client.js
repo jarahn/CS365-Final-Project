@@ -16,14 +16,12 @@ $( document ).ready(function() {
 
     });
 
-    $("#jqueryPage").css("background-color","red");
-
 
     $("#colorChanger").click(function(){
         var R = Math.floor((Math.random() * 256));
         var G = Math.floor((Math.random() * 256));
         var B = Math.floor((Math.random() * 256));
-        $("#jqueryPage").css("background-color","red");
+        $('body').css("background-color","red");
 
         
 
