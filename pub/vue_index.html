@@ -22,10 +22,10 @@
         </ul>
     </div>
 
-    <h1>Vue</h1>
     <a href="https://vuejs.org/v2/guide/" target="_blank">
         <img src="vueLogo.png">
     </a>
+    <h1>Vue</h1>
 
     <p>Vue(pronounced "view") is a progressive javascript framework for building user interfaces on single page applications.
          The core library is focused on the view layer, with a model-view viewmodel.
@@ -41,25 +41,26 @@
         methods or computed sections. (See example below)</p>
     <p>*    The element in the html file you are connecting to is placed at the top following "el:"</p>
 
-    <h3>Sample Vue Template</h3>
+    <h3>Set Up Instructions</h3>
+
+    <p>1. Click the Vue logo above for redirection to the vue.org webpage.</p>
+    <p>2. Click the green installation button on the homepage.</p>
+    <p>3. Scroll down and choose the Vue package that suits your needs.</p>
+        <p>     -There are two versions available for download, production and development. They provide the same
+            functionality, but the development version contains error and warning messages for common pitfalls made 
+            by programmers. Naturally, the development version can take up uneeded space in a functioning production 
+            environment. The production version, while beneficial, is unnecessary for CS365.
+        </p>
+    <p>4. After installing, move a copy of 'vue.js' into the public folder of your project directory.</p>
+    
+    <h3>Sample Vue Object Template</h3>
     <img class="vueImg" src="sampVue.png">
 
     <h3>Common Issues</h3>
 
     <!--The elements that connect to the sample vue app will go here-->
     <div id="app">
-        <div class="table">
-            <div v-for="(row,r) of gameB" class="row">
-                <div v-for="(cell,c) of row" v-on:click="cellClicked(r,c)" class="col">
-                    <span v-if="cell==1">R</span>
-                    <span v-if="cell==-1">B</span>
-                </div>
-            </div>
-        </div>
-
-
         
-
     </div>
 
 
