@@ -37,11 +37,18 @@ var vm = new Vue({
 
     //Need to make the method for computing a winner
     computed: {
-        isEmpty: function() {
-            if (this.message === "")
-                return true;
-            else
-                return false;
+        getWinner: function() {
+            
+            
+            
+            
+            for(let i = 0; i < 5; i++) {
+                for(let j = 0; j < 5; j++) {
+                    if (this.board[i][j] == 0) return null; //no winner yet
+                }
+            } 
+    
+            return 0; //must be a tie
         }
-    } //computed properties (methods that compute stuff based on "data")
+    }
 });
