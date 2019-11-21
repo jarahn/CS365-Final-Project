@@ -15,12 +15,20 @@ $( document ).ready(function() {
 
 
     });
-    
-    
-    
+
+    $("#jqueryPage").css("background-color","red");
 
 
+    $("#colorChanger").click(function(){
+        var R = Math.floor((Math.random() * 256));
+        var G = Math.floor((Math.random() * 256));
+        var B = Math.floor((Math.random() * 256));
+        $("#jqueryPage").css("background-color","red");
 
+        
+
+    });
+    
 });
 
 
@@ -28,12 +36,11 @@ socket.on("setBookList", function(bookList) {
     $("#theBookList").html("");
     for(let book of bookList) {
         var tdLink = $("<td></td>").text(book.Link);
-        var tdA = $("<a></a>").text(tdLink);
 
-        var tr = $("<tr></tr>").append(tdA);
+        var tr = $("<tr></tr>").append(tdLink);
 
         $("#theBookList").append(tr);
     }
 
     console.log(bookList);
-});
+}); 

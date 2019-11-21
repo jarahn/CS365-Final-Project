@@ -39,3 +39,9 @@ This doesn't highlight the current tab the user is on - ideally should fix
     background-color: rgb(100, 205, 100);
 
 }
+
+#jqueryPage{
+
+    background-color: blue;
+
+}
