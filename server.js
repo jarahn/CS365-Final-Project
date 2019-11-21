@@ -1,5 +1,3 @@
-//mongod is not working
-//Trying to get the server running, connect with it, and search the db
 
 //Stuff for MongoDB
 var mongodb = require("mongodb");
@@ -17,7 +15,6 @@ var io = socketio(server);
 app.use(express.static("pub"));
 
 
-//If we want a button for the user that will display all available books we can use this function to get them from the DB
 function sendAllBooksToClient(theSocket) {
 	db.collection("Book List").find({}, {sort: [['Link', 1]]}).toArray(function(error, documents) {
 		if (error != null) {
@@ -30,10 +27,8 @@ function sendAllBooksToClient(theSocket) {
 }
 
 
-//how do we specify where our search is looking (ex: in the keywords not the links)?
 function sendSearchToClient(theSocket, search) {
-
-	db.collection("Book List").find({Keywords: search}, {sort: [['Link', 1]]}).toArray(function(error, documents) {
+	db.collection("Book List").find({Keywords: search}, {sort: [['Author', 1]]}).toArray(function(error, documents) {
 		if (error != null) {
 			console.log(error);
 		}
@@ -65,6 +60,7 @@ io.on("connection", function(socket) {
 
 	socket.on("findBooks", function(searchTerms) {
 		console.log("Got call to search for specific books (findBooks)");
+		//Search the DB for those keywords
 		sendSearchToClient(socket, searchTerms);
 
 	});

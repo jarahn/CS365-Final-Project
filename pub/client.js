@@ -5,9 +5,8 @@ $( document ).ready(function() {
     $("#allBooks").click(function(){
         console.log("Button clicked!");
         socket.emit("getBooks");
-
-
     });
+
 
     $("#Books").click(function(){
         var info = $("#bookInput").val();
@@ -29,13 +28,15 @@ $( document ).ready(function() {
     
 });
 
-
+//How do we put a hyperlink in the <td>?
 socket.on("setBookList", function(bookList) {
     $("#theBookList").html("");
     for(let book of bookList) {
         var tdLink = $("<td></td>").text(book.Link);
+        var tdTitle = $("<td></td>").text(book.Title);
+        var tdAuthor = $("<td></td>").text(book.Author);
 
-        var tr = $("<tr></tr>").append(tdLink);
+        var tr = $("<tr></tr>").append(tdTitle).append(tdAuthor);
 
         $("#theBookList").append(tr);
     }

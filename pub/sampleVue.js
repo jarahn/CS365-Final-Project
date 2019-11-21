@@ -1,47 +1,22 @@
-//TODO: turn this into a basic single client connect 4 game
-    //To be displayed on the vue_index page.
+var imageArr = [
+    "IMG_0335.JPG",
+    "IMG_0340.JPG",
+    "IMG_0347.JPG"
+];
 
-//This minigame was made with heavy reference to the tic tac toe game designed in class.
 var vm = new Vue({
     el: "#app", //Element in the HTML we are hooking up with
     data: {
-        gameB: [
-            [0,0,0,0,0], //0 is unplayed, 1 is X, -1 is O
-            [0,0,0,0,0],
-            [0,0,0,0,0],
-            [0,0,0,0,0],
-            [0,0,0,0,0]
-        ],
-        isRedTurn: true     //Always start with red
+        imgIndx: 0,
+        img: ""
     }, //instance variables
     methods: {
-        cellClicked: function(r, c) {
-            console.log("A cell got clicked on, row = " + r + ", col = " + c);
-            if (this.gameB[r][c] != 0)
-                return;     //Do nothing as they can't replace an already played piece
-
-            var p = this.isRedTurn ? 1 : -1;    //1 for red, -1 for blue.
-            this.gameB[r].splice(c,1,p);    //place the piece.  (NEED TO USE SPLICE FOR REACTIVITY in AN ARRAY!)
-            this.isRedTurn = !this.isRedTurn;   //change turn
-       },
-        clearTheBoard: function() {
-            this.board = [
-                [0,0,0,0,0],
-                [0,0,0,0,0],
-                [0,0,0,0,0],
-                [0,0,0,0,0],
-                [0,0,0,0,0]
-            ];
-        }
+        getRandImg: function() {
+            this.imgIndx = Math.round(Math.random() * 4);
+            this.img = imgArr[this.imgIndx];
+       }
     }, 
 
-    //Need to make the method for computing a winner
     computed: {
-        isEmpty: function() {
-            if (this.message === "")
-                return true;
-            else
-                return false;
-        }
-    } //computed properties (methods that compute stuff based on "data")
+    }
 });
