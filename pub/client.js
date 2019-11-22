@@ -22,7 +22,9 @@ socket.on("setBookList", function(bookList) {
     $("#theBookList").html("");
     for(let book of bookList) {
         var tdLink = $("<td></td>").text(book.Link);
-        var tdTitle = $("<td></td>").text(book.Title);
+        var s = '<td><a href="'+book.Link+'">'+book.Title+'</a></td>';
+        s = $(s);
+        var tdTitle = $("<td></td>").append(s);
         var tdAuthor = $("<td></td>").text(book.Author);
 
         var tr = $("<tr></tr>").append(tdTitle).append(tdAuthor);

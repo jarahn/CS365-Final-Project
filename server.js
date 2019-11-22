@@ -28,7 +28,8 @@ function sendAllBooksToClient(theSocket) {
 
 
 function sendSearchToClient(theSocket, search) {
-	db.collection("Book List").find({Keywords: search}, {sort: [['Author', 1]]}).toArray(function(error, documents) {
+	search = search.toUpperCase();
+	db.collection("Book List").find({Keywords: {$regex: search}}, {sort: [['Author', 1]]}).toArray(function(error, documents) {
 		if (error != null) {
 			console.log(error);
 		}
