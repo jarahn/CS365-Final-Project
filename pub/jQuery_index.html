@@ -37,13 +37,12 @@
     <br>
     (In this example it is in the same directory as the code) 
     </p>
-    <img src="img\jqueryScriptLoad.png">
+    <img src="img/jqueryScriptLoad.png">
 
     <p>Jquery utilizes the "$" as a selector. Whenever we want to run jquery we wrap it in a selecter looking like $( ).
-    This lets the compiler know that the proceeding code will be jquery, not plain jscript.
+    This lets the program know that the proceeding code will be jquery, not plain jscript.
     
     </p>
-
 
     <h2>Uses</h2>
     <p>One of jquerys most notable attributes is the amount of additional libraries it contains
@@ -52,26 +51,63 @@
     <br>
     Responsiveness and simplicity
     </p>
-    
-    <h2>Code example:</h2>
-    <p>One of the most useful attributes of Jquery is the ability to change css properties with javascript.
-    An example of this can be shown as follows, where we use a button to randomly change the color of the page.
+    <h2>Important Concepts</h2>
+    <p>Jquery has some very useful features which allow for you to manipulate html elements with ease.
+        1: Add class allows for you to attach a class attribute to a html elements
+        <br>
+        2: The .css() selector lets you change a css property of an element
+        <br>
+        3: Event handling in Jquery allows for you bind functions to html elements. This allows for the creation of responsive websites.
+        <br> 
     </p>
+   
+    <p>One of the most useful properties of Jquery is its simple approach to event handling. 
+    In combination with the css selector we're able to create better web pages.
+    An example of this can be shown as follows:
+    </p>
+    <h3>Press me to change the page color</h3>
     <button id="colorChanger">submit</button>
+    <br>
+    <h2>Code example:</h2>
+    <h3>html code</h3>
+    <img src="img/htmlButton.png">
+    <br>
+    <h3>jscript and jquery code</h3>
+    <img src="img/randomColor.png">
 
+    <p>The submit button named "colorChanger"  is bound to an event handler named ".click". 
+    When we click the button we randomise 3 RGB values and then assign them to the css property "background-color" of the pages body element named "jqueryPage"  
+    This gets us a random color every time we hit the button and then change the pages background to such.
+    </p>
 
     <h2>Important Concepts</h2>
-    <p>add class, .css, CALLBACKS</p>
+    <p>Jquery has some very useful features which allow for you to manipulate html elements with ease.
+        <br>
+        1: Add class allows for you to attach a class attribute to a html elements
+        <br>
+        2: The .css() selector lets you change a css property of an element
+        <br>
+        3: Event handling in Jquery allows for you bind functions to html elements. This allows for the creation of responsive websites.
+        <br>
+    </p>
 
-
-    <h2>Important/useful elements</h2>
-    <p>find(), hide() and show(), html(), append() and prepend(), css() attr() and val(), each()</p>
-
-    
-
+    <h2>Useful methods</h2>
+    <p>find(): Allows you to search for a selector or element: find("#colorChange") or find("button")
+    <br>
+    hide() and show(): Used to hide or display elements on the webpage.
+    <br>
+    html(): will get the first html element that matches the input
+    <br>
+    append() and prepend(): allows you to insert elements into already existing elements
+    <br>
+    css() attr() and val():css() will change the css property of elements. 
+    <br>
+    each(): This one is a little bit more complex, you call it like so: $("jquerySelector").each(array,functionToRunOnArray)
+    This will call the function on evcery index of the array.
+    <br>
+    </p>
 
 </body>
-
 
 
 <script src="vue.js"></script>

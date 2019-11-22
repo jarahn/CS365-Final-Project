@@ -1,6 +1,12 @@
 //Will contain all client side code
 var socket = io();
 
+function randomColor(elementName){
+    
+
+
+}
+
 $( document ).ready(function() {
     $("#allBooks").click(function(){
         console.log("Button clicked!");
@@ -23,6 +29,8 @@ $( document ).ready(function() {
         console.log("t");
         $('#jqueryPage').css('background-color','rgb('+R +','+G+','+B+')');
     });
+
+
     
 });
 
