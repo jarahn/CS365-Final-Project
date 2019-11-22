@@ -39,6 +39,8 @@ function sendSearchToClient(theSocket, search) {
 	});
 }
 
+
+
 io.on("connection", function(socket) {
 	console.log("Somebody connected.");
 
