@@ -1,8 +1,12 @@
 var imageArr = [
-    "IMG_0335.JPG",
-    "IMG_0340.JPG",
-    "IMG_0347.JPG"
+    "img/IMG_0326.JPG",
+    "img/IMG_0330.JPG",
+    "img/IMG_0332.JPG",
+    "img/IMG_0333.JPG",
+    "img/IMG_0335.JPG",
+    "img/IMG_0340.JPG"
 ];
+
 
 var vm = new Vue({
     el: "#app", //Element in the HTML we are hooking up with
@@ -12,8 +16,8 @@ var vm = new Vue({
     }, //instance variables
     methods: {
         getRandImg: function() {
-            this.imgIndx = Math.round(Math.random() * 4);
-            this.img = imgArr[this.imgIndx];
+            this.imgIndx = Math.floor(Math.random() * 6);
+            this.img = imageArr[this.imgIndx];
        }
     }, 
 

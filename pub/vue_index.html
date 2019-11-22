@@ -6,6 +6,9 @@
     <title>Vue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -32,15 +35,6 @@
          The core library is focused on the view layer, with a model-view viewmodel.
           It is often revered as easy to pick up and integrate with other libraries or existing projects. 
         Companies such as Adobe, Alibaba, and Grammarly have all used Vue in some form for their web applications.</p>
-    
-    <h2>Important Notes</h2>
-
-    <p>*    You must include the vue.js script in your html file to use the vue framework.</p>
-    <p>*    Vue is not reactive to individual array elements. - one workaround is to use the splice method
-        whenever you update an array.</p>
-    <p>*    You must put "this." before the name of a data element when acessing it from either the 
-        methods or computed sections. (See example below)</p>
-    <p>*    The element in the html file you are connecting to is placed at the top following "el:"</p>
 
     <h3>Set Up Instructions</h3>
 
@@ -53,6 +47,15 @@
             environment. The production version, while beneficial, is unnecessary for CS365.
         </p>
     <p>4. After installing, move a copy of 'vue.js' into the public folder of your project directory.</p>
+
+    <h3>Important Notes</h3>
+
+    <p>*    You must include the vue.js script in your html file to use the vue framework.</p>
+    <p>*    Vue is not reactive to individual array elements. - one workaround is to use the splice method
+        whenever you update an array.</p>
+    <p>*    You must put "this." before the name of a data element when acessing it from either the 
+        methods or computed sections. (See example below)</p>
+    <p>*    The element in the html file you are connecting to is placed at the top following "el:"</p>
     
     <h3>Sample Vue Object Template</h3>
     <img class="vueImg" src="sampVue.png">
@@ -62,10 +65,23 @@
 
         <h3>Random Picture Generator Made With Vue</h3>
         <button type="button" v-on:click="getRandImg">Get a Random Picture</button>
-        <img id="pic" src="IMG_0335.JPG">
+        <img id="pic" v-bind:src="img">
+
+        <h3>How It's Made:</h3>
+        <p>This picture generator is made by getting a random index in a predefined array of images (on the button push),
+            then displaying the image that lives at that index.</p>
+        <p>To reactively change the "src" of an image element with Vue, all you need is "v-bind:src=". Replacing the normal
+            image source with a data element (string) found in your Vue object.  </p>
 
     </div>
 
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+ integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+ integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 
@@ -75,4 +91,5 @@
 <script src="jquery-3.4.1.js"></script>
 <script src="/socket.io/socket.io.js" type="text/javascript"></script>
 <script src="client.js" type="text/javascript"></script>
+<script src="sampleVue.js" type="text/javascript"></script>
 </html>
