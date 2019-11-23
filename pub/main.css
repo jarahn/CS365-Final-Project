@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(51, 47, 47);
     display: flex;
     justify-content: center;
 }
@@ -38,7 +38,7 @@ This doesn't highlight the current tab the user is on - ideally should fix
 
 
 #nodePage{
-    background-color: slateblue;
+    background-color: rgb(243, 115, 101);
 
 }
 
@@ -52,6 +52,9 @@ This doesn't highlight the current tab the user is on - ideally should fix
     background-color: rgb(24, 177, 90);
 
 }
+#mongoPage{
+    background-color:rgb(116, 32, 32);
+}
 
 #socketPage{
     background-color:slategray;
@@ -59,7 +62,7 @@ This doesn't highlight the current tab the user is on - ideally should fix
 }
 
 #homePage{
-    background-color:rgb(245, 245, 97);
+    background-color:rgb(247, 202, 53);
 }
 
 .navigation{
