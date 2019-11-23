@@ -38,14 +38,28 @@ This doesn't highlight the current tab the user is on - ideally should fix
 
 
 #nodePage{
-    background-color: teal;
+    background-color: slateblue;
 
 }
 
 #jqueryPage{
 
-    background-color: teal;
+    background-color: steelblue;
 
+}
+
+#vuePage{
+    background-color: rgb(24, 177, 90);
+
+}
+
+#socketPage{
+    background-color:slategray;
+
+}
+
+#homePage{
+    background-color:rgb(245, 245, 97);
 }
 
 .navigation{
@@ -54,4 +68,9 @@ This doesn't highlight the current tab the user is on - ideally should fix
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#bookButtons{
+    display: flex;
+    justify-content: center;
 }
