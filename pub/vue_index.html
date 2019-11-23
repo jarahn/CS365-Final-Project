@@ -10,9 +10,8 @@
      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
-
-<body>
     
+<body>
     <div id="navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -27,53 +26,58 @@
     </div>
     <div class="mx-auto" style="width:75%">
 
-    <a href="https://vuejs.org/v2/guide/" target="_blank">
-        <img src="vueLogo.png">
-    </a>
-    <h1>Vue</h1>
+    <div class="text-center">
+        <a href="https://vuejs.org/v2/guide/" target="_blank">
+            <img src="vueLogo.png" class="rounded">
+        </a>
+    </div>
 
-    <p>Vue(pronounced "view") is a progressive javascript framework for building user interfaces on single page applications.
-         The core library is focused on the view layer, with a model-view viewmodel.
-          It is often revered as easy to pick up and integrate with other libraries or existing projects. 
-        Companies such as Adobe, Alibaba, and Grammarly have all used Vue in some form for their web applications.</p>
+    <div class="mx-5">
+        <h1 class="font-weight-bold">Vue</h1>
 
-    <h3>Set Up Instructions</h3>
+        <p>Vue <small class="text-muted">(pronounced "view")</small> is a progressive javascript framework for building
+            user interfaces on single page applications. The core library is focused on the view layer, with a model-view viewmodel.
+            It is often revered as easy to pick up and integrate with other libraries or existing projects. 
+            Companies such as Adobe, Alibaba, and Grammarly have all used Vue in some form for their web applications.</p>
 
-    <p>1. Click the Vue logo above for redirection to the vue.org webpage.</p>
-    <p>2. Click the green installation button on the homepage.</p>
-    <p>3. Scroll down and choose the Vue package that suits your needs.</p>
-        <p>     -There are two versions available for download, production and development. They provide the same
-            functionality, but the development version contains error and warning messages for common pitfalls made 
-            by programmers. Naturally, the development version can take up uneeded space in a functioning production 
-            environment. The production version, while beneficial, is unnecessary for CS365.
-        </p>
-    <p>4. After installing, move a copy of 'vue.js' into the public folder of your project directory.</p>
+        <h3>Set Up Instructions:</h3>
 
-    <h3>Important Notes</h3>
+        <p>1. Click the Vue logo above for redirection to the vue.org webpage.</p>
+        <p>2. Click the green installation button on the homepage.</p>
+        <p>3. Scroll down and choose the Vue package that suits your needs.</p>
+            <p class="text-muted"><small>- There are two versions available for download, production and development. They provide the same
+                functionality, but the development version contains error and warning messages for common pitfalls made 
+                by programmers. Naturally, the development version can take up uneeded space in a functioning production 
+                environment. The production version, while beneficial, is unnecessary for CS365.
+            </small></p>
+        <p><mark>4. After installing, move a copy of 'vue.js' into the public folder of your project directory.</mark></p>
 
-    <p>*    You must include the vue.js script in your html file to use the vue framework.</p>
-    <p>*    Vue is not reactive to individual array elements. - one workaround is to use the splice method
-        whenever you update an array.</p>
-    <p>*    You must put "this." before the name of a data element when acessing it from either the 
-        methods or computed sections. (See example below)</p>
-    <p>*    The element in the html file you are connecting to is placed at the top following "el:"</p>
-    
-    <h3>Sample Vue Object Template</h3>
-    <img class="vueImg" src="sampVue.png">
+        <h3>Important Notes:</h3>
 
-    <!--how do I put the vue element {{img}} in for the src=""?-->
-    <div id="app">
+        <p>*    You must include the vue.js script in your html file to use the vue framework.</p>
+        <p>*    Vue is not reactive to individual array elements. - one workaround is to use the splice method
+            whenever you update an array.</p>
+        <p>*    You must put "this." before the name of a data element when acessing it from either the 
+            methods or computed sections. <small class="text-muted">(See example below)</small></p>
+        <p>*    The element in the html file you are connecting to is placed at the top following "el:"</p>
+        
+        <h3>Sample Vue Object Template:</h3>
+        <img class="vueImg" src="sampVue.png">
 
-        <h3>Random Picture Generator Made With Vue</h3>
-        <button type="button" v-on:click="getRandImg">Get a Random Picture</button>
-        <img id="pic" v-bind:src="img">
+        <!--how do I put the vue element {{img}} in for the src=""?-->
+        <div id="app">
 
-        <h3>How It's Made:</h3>
-        <p>This picture generator is made by getting a random index in a predefined array of images (on the button push),
-            then displaying the image that lives at that index.</p>
-        <p>To reactively change the "src" of an image element with Vue, all you need is "v-bind:src=". Replacing the normal
-            image source with a data element (string) found in your Vue object.  </p>
+            <h3>Random Picture Generator Made With Vue:</h3>
+            <button type="button" v-on:click="getRandImg">Get a Random Picture</button>
+            <img id="pic" v-bind:src="img">
 
+            <h3><mark>How It's Made:</mark></h3>
+            <p>This picture generator is made by getting a random index in a predefined array of images <small class="text-muted">(on the button push)</small>,
+                then displaying the image that lives at that index.</p>
+            <p>To reactively change the "src" of an image element with Vue, all you need is "v-bind:src=". Replacing the normal
+                image source with a data element <small class="text-muted">(string)</small> found in your Vue object.  </p>
+
+        </div>
     </div>
     </div>
 
