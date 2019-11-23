@@ -14,7 +14,7 @@
 <body>
     <div id="navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li id="first"><a href="index.html">Home</a></li>
             <li><a href="Node_Index.html">Node</a></li>
             <li><a class="active" href="vue_index.html">Vue</a></li>
             <li><a href="jQuery_index.html">jQuery</a></li>
@@ -42,24 +42,31 @@
 
         <h3>Set Up Instructions:</h3>
 
-        <p>1. Click the Vue logo above for redirection to the vue.org webpage.</p>
-        <p>2. Click the green installation button on the homepage.</p>
-        <p>3. Scroll down and choose the Vue package that suits your needs.</p>
-            <p class="text-muted"><small>- There are two versions available for download, production and development. They provide the same
+        <p>1. Click the Vue logo above for redirection to the vue.org webpage.
+        <br>
+        2. Click the green installation button on the homepage.
+        <br>
+        3. Scroll down and choose the Vue package that suits your needs.
+        <br>
+            <small class="text-muted">- There are two versions available for download, production and development. They provide the same
                 functionality, but the development version contains error and warning messages for common pitfalls made 
                 by programmers. Naturally, the development version can take up uneeded space in a functioning production 
                 environment. The production version, while beneficial, is unnecessary for CS365.
-            </small></p>
-        <p><mark>4. After installing, move a copy of 'vue.js' into the public folder of your project directory.</mark></p>
+            </small>
+        <br>
+        <mark>4. After installing, move a copy of 'vue.js' into the public folder of your project directory.</mark></p>
 
         <h3>Important Notes:</h3>
 
-        <p>*    You must include the vue.js script in your html file to use the vue framework.</p>
-        <p>*    Vue is not reactive to individual array elements. - one workaround is to use the splice method
-            whenever you update an array.</p>
-        <p>*    You must put "this." before the name of a data element when acessing it from either the 
-            methods or computed sections. <small class="text-muted">(See example below)</small></p>
-        <p>*    The element in the html file you are connecting to is placed at the top following "el:"</p>
+        <p>*    You must include the vue.js script in your html file to use the vue framework.
+        <br>    
+        *    Vue is not reactive to individual array elements. - one workaround is to use the splice method
+            whenever you update an array.
+        <br>
+        *    You must put "this." before the name of a data element when acessing it from either the 
+            methods or computed sections. <small class="text-muted">(See example below)</small>
+        <br>
+        *    The element in the html file you are connecting to is placed at the top following "el:"</p>
         
         <h3>Sample Vue Object Template:</h3>
         <img class="vueImg" src="sampVue.png">
@@ -69,7 +76,11 @@
 
             <h3>Random Picture Generator Made With Vue:</h3>
             <button type="button" v-on:click="getRandImg">Get a Random Picture</button>
+            <br>
+            <br>
             <img id="pic" v-bind:src="img">
+            <br>
+            <br>
 
             <h3><mark>How It's Made:</mark></h3>
             <p>This picture generator is made by getting a random index in a predefined array of images <small class="text-muted">(on the button push)</small>,

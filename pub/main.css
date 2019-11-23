@@ -16,6 +16,10 @@ li {
     border-right: 1px solid #bbb;
 }
 
+#first {
+    border-left: 1px solid #bbb;
+}
+
 li a {
     display: block;
     color: white;
