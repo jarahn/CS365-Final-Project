@@ -12,6 +12,7 @@ $( document ).ready(function() {
         console.log("Button clicked!");
         socket.emit("getBooks");
     });
+    $(".active").css('background-color',$('body').css('background-color'));
 
 
     $("#Books").click(function(){

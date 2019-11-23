@@ -64,6 +64,9 @@ This doesn't highlight the current tab the user is on - ideally should fix
 #homePage{
     background-color:rgb(247, 202, 53);
 }
+#bookPage{
+    background-color:seashell;
+}
 
 .navigation{
     float: none;
