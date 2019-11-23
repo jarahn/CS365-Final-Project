@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(51, 47, 47);
     display: flex;
     justify-content: center;
 }
@@ -42,14 +42,31 @@ This doesn't highlight the current tab the user is on - ideally should fix
 
 
 #nodePage{
-    background-color: teal;
+    background-color: rgb(243, 115, 101);
 
 }
 
 #jqueryPage{
 
-    background-color: teal;
+    background-color: steelblue;
 
+}
+
+#vuePage{
+    background-color: rgb(24, 177, 90);
+
+}
+#mongoPage{
+    background-color:rgb(116, 32, 32);
+}
+
+#socketPage{
+    background-color:slategray;
+
+}
+
+#homePage{
+    background-color:rgb(247, 202, 53);
 }
 
 .navigation{
@@ -58,4 +75,9 @@ This doesn't highlight the current tab the user is on - ideally should fix
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#bookButtons{
+    display: flex;
+    justify-content: center;
 }

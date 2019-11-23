@@ -11,7 +11,7 @@
 
 </head>
     
-<body>
+<body id="vuePage">
     <div id="navigation">
         <ul>
             <li id="first"><a href="index.html">Home</a></li>
@@ -24,7 +24,7 @@
 
         </ul>
     </div>
-    <div class="mx-auto" style="width:75%">
+    <div class="mx-auto shadow-lg p-3 mb-5 bg-white rounded" style="width:75%">
 
     <div class="text-center">
         <a href="https://vuejs.org/v2/guide/" target="_blank">
@@ -32,7 +32,7 @@
         </a>
     </div>
 
-    <div class="mx-5">
+    <div>
         <h1 class="font-weight-bold">Vue</h1>
 
         <p>Vue <small class="text-muted">(pronounced "view")</small> is a progressive javascript framework for building
@@ -75,7 +75,7 @@
         <div id="app">
 
             <h3>Random Picture Generator Made With Vue:</h3>
-            <button type="button" v-on:click="getRandImg">Get a Random Picture</button>
+            <button type="button" v-on:click="getRandImg" class="btn btn-primary">Get a Random Picture</button>
             <br>
             <br>
             <img id="pic" v-bind:src="img">
