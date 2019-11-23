@@ -12,9 +12,8 @@
 </head>
 
 <body id="jqueryPage">
-    
     <div id="navigation">
-        <ul>
+        <ul class="fixed-top">
             <li><a href="index.html">Home</a></li>
             <li><a href="Node_Index.html">Node</a></li>
             <li><a href="vue_index.html">Vue</a></li>
@@ -24,15 +23,16 @@
             <li><a href="books.html">Books</a></li>
         </ul>
     </div>
-    <h1>JQuery</h1>
-    <img src="img/jqueryLogo.jpg">
-    <p>A open source lightweight javascript library</p>
+    <div class="mx-auto" style="width:75%">
+    <h1 class="font-weight-bold">JQuery</h1>
+    <a href="https://jquery.com/" target="_blank"><img src="img/jqueryLogo.png" class="rounded float-right" ></a>
+    <p>An open source lightweight javascript library</p>
     <br>
     <p>Jquery is a library of Javascript functions used to manipulate javascript DOM elements. Currently it is the most deployed javascript library, approximately 73% of the worlds top 10 million websites use some form of it.
     jquery works by simplifying the syntax for manipulating elements of a page, allowing for the devloper to create more dynamic and interactive pages.
     </p>
 
-    <h2>getting started</h2>
+    <h2 class="font-weight-bold">Getting Started</h2>
     <p>loadingscript, $ selector, document ready function  </p>
     <p>In order to use jqeury, we first have to load the jquery library. 
     This is done by downloading a version of Jquery,        
@@ -40,21 +40,20 @@
     <br>
     (In this example it is in the same directory as the code) 
     </p>
-    <img src="img/jqueryScriptLoad.png">
+    <img src="img/jqueryScriptLoad.png" class="rounded">
 
     <p>Jquery utilizes the "$" as a selector. Whenever we want to run jquery we wrap it in a selecter looking like $( ).
     This lets the program know that the proceeding code will be jquery, not plain jscript.
-    
     </p>
 
-    <h2>Uses</h2>
+    <h2 class="font-weight-bold">Uses</h2>
     <p>One of jquerys most notable attributes is the amount of additional libraries it contains
     Jquery contains numerous plugins and libraries that allow for esay implementation of creative content.
     There are plugins available that let you Vibrate a phone, create a slideshow, efficiently load a youtube video, the libraries are almost endless.
     <br>
     Responsiveness and simplicity
     </p>
-    <h2>Important Concepts</h2>
+    <h2 class="font-weight-bold">Important Concepts</h2>
     <p>Jquery has some very useful features which allow for you to manipulate html elements with ease.
         1: Add class allows for you to attach a class attribute to a html elements
         <br>
@@ -69,21 +68,21 @@
     An example of this can be shown as follows:
     </p>
     <h3>Press me to change the page color</h3>
-    <button id="colorChanger">submit</button>
+    <button id="colorChanger" class="btn btn-primary">submit</button>
     <br>
-    <h2>Code example:</h2>
-    <h3>html code</h3>
-    <img src="img/htmlButton.png">
+    <h2 class="font-weight-bold">Code example:</h2>
+    <h3>Html Code</h3>
+    <img src="img/htmlButton.png" class="rounded">
     <br>
-    <h3>jscript and jquery code</h3>
-    <img src="img/randomColor.png">
+    <h3>Jscript and Jquery Code</h3>
+    <img src="img/randomColor.png" class="rounded">
 
     <p>The submit button named "colorChanger"  is bound to an event handler named ".click". 
     When we click the button we randomise 3 RGB values and then assign them to the css property "background-color" of the pages body element named "jqueryPage"  
     This gets us a random color every time we hit the button and then change the pages background to such.
     </p>
 
-    <h2>Important Concepts</h2>
+    <h2 class="font-weight-bold">Important Concepts</h2>
     <p>Jquery has some very useful features which allow for you to manipulate html elements with ease.
         <br>
         1: Add class allows for you to attach a class attribute to a html elements
@@ -94,7 +93,7 @@
         <br>
     </p>
 
-    <h2>Useful methods</h2>
+    <h2 class="font-weight-bold">Useful methods</h2>
     <p>find(): Allows you to search for a selector or element: find("#colorChange") or find("button")
     <br>
     hide() and show(): Used to hide or display elements on the webpage.
@@ -109,6 +108,7 @@
     This will call the function on evcery index of the array.
     <br>
     </p>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
