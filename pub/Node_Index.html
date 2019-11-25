@@ -89,14 +89,15 @@
     2. run the command "node nameOfServerCode.js" where the argument is the name of the file that contians your server code, this starts the server. 
     Makesure you keep the command line open, if you close it your server turns off.
     <br>
-    3. In order to connect to your server, go to your preferd browser and go to "127.0.0.1". This is the ip of your machine, the "localhost"
+    3. In order to connect to your server, go to your preferd browser and go to "127.0.0.1". Otherwise known as "localhost" <small class="text-muted">Note: make sure 
+    you are connecting to the same port you specified in your server.js file. (port 80 is used by deafult, to change it use "127.0.0.1::port#" instead)</small> 
     Once you connect to that url/ip you should get a message in the command line saying "sombody connected" as well as your webpage displaying in your browser.
     </p>
 
 
     <h2 class="font-weight-bold">Pros and Cons</h2>
-    <p class="info">Pros: Scalability, use of Javascript, Large amount of open source downloadables, great for IO heavy apps</p>
-    <p class="info">Cons: not good for CPU heavy apps(video or images) this is due to node being single threaded.</p>
+    <p class="info"><small class="font-weight-bold">Pros:</small> Scalability, use of Javascript, Large amount of open source downloadables, great for IO heavy apps</p>
+    <p class="info"><small class="font-weight-bold">Cons:</small> Not good for CPU heavy apps(video or images) this is due to node being single threaded.</p>
     
     <h2 class="font-weight-bold">Companies that utilize Node</h2>
     <p class="info">Paypal, Go Daddy, Groupon, IBM, LinkedIn, Microsoft
