@@ -67,11 +67,40 @@
             for applications with a large number of client connections.</p>
 
         <h3>Sample Socket.io Templates for Client and Server:</h3>
-        <h4 id="sHeader">Client: (make white)</h4>
+        <h4 class="text-muted">Client: </h4>
         <img id="sock-c" src="img/socket-client.PNG">
         <br>
-        <h4 id="sHeader">Server: (make white)</h4>
+        <h4 class="text-muted">Server: </h4>
         <img id="sock-s" src="img/socket-server.PNG">
+        <br>
+        <br>
+
+        <h4>Comments and Suggestions:</h4>
+
+        <!--See books.html for understanding this layout-->
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                <th>Comment</th>
+                <th>User</th>
+                </tr>
+            </thead>
+        
+            <tbody id="comments">
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td><input type="text" id="comment" placeholder="Comments/Suggestions" required></td>
+                    <td><input type="text" id="user" placeholder="User" required></td>
+                </tr>
+            </tfoot>
+        </table>
+        <button id="addComm">Add Comment</button>
+        <br>
+        <br>
+
+        <h4><mark>How It's Made:</mark></h4>
 
 
 
