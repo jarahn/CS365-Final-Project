@@ -53,19 +53,19 @@
     2. Node uses a package manager titled "node package manager" NPM for short. In order to start a project we have to initialize our project for node.
     This is done with the cmd "NPM init", it creates a json file in the working directory with all the information node needs to function.
     <br>
-    3.Now that we have node installed and initialized we can download any other libraries we want with the NPM command.
+    3. Now that we have node installed and initialized we can download any other libraries we want with the NPM command.
     A great example is the "express" library. "NPM install express" will add all related setup info for the express library into the json file that init created.
     </p>
 
     <h2>Get and Post Requests</h2>
-    <p class="info"><small class="font-weight-bold">*</small>Get and post are both http requests that handle how to access a webpage.
+    <p class="info"><small class="font-weight-bold">*</small> Get and post are both http requests that handle how to access a webpage.
     <br>
-    <small class="font-weight-bold">*</small>A GET request is used to request data from a source. It is used to retrieve whatever information is in the request URL.
+    <small class="font-weight-bold">*</small> A GET request is used to request data from a source. It is used to retrieve whatever information is in the request URL.
     It is cacheable by the browser and will remain in the browsers history as its query and repsonse is displayed in the URL.
     <br>
-    <small class="font-weight-bold">*</small>A POST request is used to send information to a server to either modify or create a resource. 
+    <small class="font-weight-bold">*</small> A POST request is used to send information to a server to either modify or create a resource. 
     <br>
-    <small class="font-weight-bold">*</small>Contrary to a GET requests, a POST request isn't cached and isn't visible in the URL.
+    <small class="font-weight-bold">*</small> Contrary to a GET requests, a POST request isn't cached and isn't visible in the URL.
     
     </p>
     <h2>Express</h2>
@@ -74,7 +74,7 @@
     Express operates by directing the program what function should be called for each http request type and route. 
     </p>
     <h2>Express Code Example Using Socket.io:</h2>
-    <img src="img/expressImage.png">
+    <img src="img/expressImage.png" class="mx-2 py-2 rounded">
     <p>1.We require("express") in order to ensure that we include the express module
     <br>
     2. We then create an express object named app and use it to create a http server object with http.Server("app")
@@ -83,14 +83,13 @@
     </p>
 
     <h2>Running and Connecting to a Node Server on Localhost</h2>
-    <p><small class="font-italic">In order to run your server:</small>
+    <h4 class="font-italic">In Order to Run the Server</h4>
+    1. Open the command line and navigate to your projects directory/where you called npm init.
     <br>
-    1. open the command line and navigate to your projects directory/where you called npm init.
-    <br>
-    2. run the command "node nameOfServerCode.js" where the argument is the name of the file that contians your server code, this starts the server. 
+    2. Run the command "node nameOfServerCode.js" where the argument is the name of the file that contians your server code, this starts the server. 
     Makesure you keep the command line open, if you close it your server turns off.
     <br>
-    3. In order to connect to your server, go to your preferd browser and go to "127.0.0.1". Otherwise known as "localhost" <small class="text-muted">Note: make sure 
+    3. In order to connect to your server, go to your prefered browser and go to "127.0.0.1". Otherwise known as "localhost" <small class="text-muted">Note: make sure 
     you are connecting to the same port you specified in your server.js file. (port 80 is used by deafult, to change it use: "127.0.0.1::port#" instead)</small> 
     Once you connect to that url/ip you should get a message in the command line saying "sombody connected" as well as your webpage displaying in your browser.
     </p>

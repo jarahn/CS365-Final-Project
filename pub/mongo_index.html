@@ -31,9 +31,7 @@
     <br>
     <h2 class="font-weight-bold">An open source database solution</h2>
     <p>MongoDB is an open source database software produced by MongoDB inc (formerly known as 10gen). While technically being open source, the company still offers an enterprise package.
-    It is a lightweight "NoSQL" document database that uses "JSON-like" entries to store data. This json like format allows for database queries to be simpler than other formats.
-
-    
+    It is a lightweight "NoSQL" document database that uses "JSON-like" entries to store data. This json like format allows for database queries to be simpler than other formats.    
     </p>
 
     <h2>Setup</h2>
@@ -53,16 +51,26 @@
     <br>
     3. You should see a display box with file paths like so
     click on the entry titled "path" and hit the edit button. Once the "edit environment variables" window is open, click underneath the very last entry on the list, then select new from the right hand side of the screen.
-    add the path to your newly downloaded mongoDB directory here.
+    add the path to your newly downloaded mongoDB directory here. Once you've added the path hit okay. You should now be able to run the mongo server!
+    </p>
+    <h2>Database Structure</h2>
+    <p>Mongo db entries are modeled like so:
+    A database has collections,
+    a collection contains either one or more documents, 
+    these documents will contain fields. 
+    This modeling allows for accessing data similar to accessing an objects property in some programming lagnuages.
+    
     </p>
    
     <h2>Creating and running a database</h2>
+    <p>In order to run the mongo shell, type "mongod" in the command prompt(this will only work after the steps above).
+    Once in the mongo shell type "use databaseName" to either create a database or to use an existing database.
+
+
+    </p>
+    <h2>Retrieving and Storing data</h2>
     <p></p>
-    <h2>Retrieving and storing data</h2>
-    <p></p>
-    <h2>The "server"</h2>
-    <p></p>
-    <h2></h2>
+    <h2>Useful commands</h2>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
