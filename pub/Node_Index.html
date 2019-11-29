@@ -45,11 +45,11 @@
         It offers great performance on almost all operating systems.
     </p>
     
-    <h2 class="font-weight-bold">Node setup, Package manager and installation</h2>
+    <h2>Node setup, Package manager and installation</h2>
     
     <p>
-    <a href="https://nodejs.org/en/download/" target="_blank"><mark>1. Download the latest version of node, or check to see if you already have with "node -v" in the command line</mark></a>
-    <br>
+    <a href="https://nodejs.org/en/download/" target="_blank">
+    <div class="text-primary">1. Download the latest version of node, or check to see if you already have with "node -v" in the command line</div></a>
     2. Node uses a package manager titled "node package manager" NPM for short. In order to start a project we have to initialize our project for node.
     This is done with the cmd "NPM init", it creates a json file in the working directory with all the information node needs to function.
     <br>
@@ -57,7 +57,7 @@
     A great example is the "express" library. "NPM install express" will add all related setup info for the express library into the json file that init created.
     </p>
 
-    <h2 class="font-weight-bold">Get and Post Requests</h2>
+    <h2>Get and Post Requests</h2>
     <p class="info"><small class="font-weight-bold">*</small>Get and post are both http requests that handle how to access a webpage.
     <br>
     <small class="font-weight-bold">*</small>A GET request is used to request data from a source. It is used to retrieve whatever information is in the request URL.
@@ -68,12 +68,12 @@
     <small class="font-weight-bold">*</small>Contrary to a GET requests, a POST request isn't cached and isn't visible in the URL.
     
     </p>
-    <h2 class="font-weight-bold">Express</h2>
+    <h2>Express</h2>
     <p>Express is a node.js framework used to create a webpages backend. 
     It is used to handle http requests and routes as well as setting ports. Just like Node express also has a multitude of libraries that can be installed and used when needed.
     Express operates by directing the program what function should be called for each http request type and route. 
     </p>
-    <h2 class="font-weight-bold">Express Code Example Using Socket.io:</h2>
+    <h2>Express Code Example Using Socket.io:</h2>
     <img src="img/expressImage.png">
     <p>1.We require("express") in order to ensure that we include the express module
     <br>
@@ -82,7 +82,7 @@
     3. app.use(express.static("pub")) signals to express to allow for us to load files that are in the pub folder. These lines of code are most of the reason youre able to view the webpage right now.
     </p>
 
-    <h2 class="font-weight-bold">Running and Connecting to a Node Server on Localhost</h2>
+    <h2>Running and Connecting to a Node Server on Localhost</h2>
     <p><small class="font-italic">In order to run your server:</small>
     <br>
     1. open the command line and navigate to your projects directory/where you called npm init.
@@ -96,11 +96,11 @@
     </p>
 
 
-    <h2 class="font-weight-bold">Pros and Cons</h2>
+    <h2>Pros and Cons</h2>
     <p class="info"><small class="font-weight-bold">Pros:</small> Scalability, use of Javascript, Large amount of open source downloadables, great for IO heavy apps</p>
     <p class="info"><small class="font-weight-bold">Cons:</small> Not good for CPU heavy apps(video or images). This is due to node being single threaded.</p>
     
-    <h2 class="font-weight-bold">Companies that utilize Node</h2>
+    <h2>Companies that utilize Node</h2>
     <p class="info">Paypal, Go Daddy, Groupon, IBM, LinkedIn, Microsoft
     <br>
     <small class="text-muted">-Node is found among almost all online web applications. </small>
