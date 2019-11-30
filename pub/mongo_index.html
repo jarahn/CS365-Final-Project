@@ -58,18 +58,22 @@
     A database has collections,
     a collection contains either one or more documents, 
     these documents will contain fields. 
-    This modeling allows for accessing data similar to accessing an objects property in some programming lagnuages.
-    
+    This modeling allows for accessing data similar to accessing an objects property in some programming languages.
     </p>
    
     <h2>Creating and running a database</h2>
     <p>In order to run the mongo shell, type "mongod" in the command prompt(this will only work after the steps above).
-    Once in the mongo shell type "use databaseName" to either create a database or to use an existing database.
-
-
+    Once in the mongo shell type "use databaseName" to either create a new database or to use an existing database.
     </p>
     <h2>Retrieving and Storing data</h2>
-    <p></p>
+    <p>One key feature of mongoDB is how simple its commands are, here are a few examples.
+    <small class="font-weight-bold">*</small>on mongo shell in order to get all documents in a collection the command is "db.inventory.find({})" this will return all entries in the "inventory" collection.
+    You can search further by refining the query (db.inventory.books.find({})).
+    <br>
+    <small class="font-weight-bold">*</small>In order to add an entry to a database simply type db.inventory.books.insertOne({Title:"bookname"});
+    <small class="font-weight-bold">*</small>
+    <small class="font-weight-bold">*</small>
+    </p>
     <h2>Useful commands</h2>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
