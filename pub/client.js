@@ -32,6 +32,15 @@ $( document ).ready(function() {
         $('.active').css('background-color','rgb('+R +','+G+','+B+')');
     });
 
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 150){
+            $("#navigation").addClass("navFix");
+        }
+        else{
+            $("#navigation").removeClass("navFix");
+        }
+    });
+
 });
 
 socket.on("setBookList", function(bookList) {

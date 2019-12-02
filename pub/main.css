@@ -40,11 +40,17 @@ This doesn't highlight the current tab the user is on - ideally should fix
     background-color: rgb(107, 122, 207);
 }
 
+.navFix{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 #nodePage{
     background-color: rgb(243, 115, 101);
 
 }
+
 
 #jqueryPage{
 
