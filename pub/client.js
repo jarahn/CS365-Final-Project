@@ -30,8 +30,17 @@ $( document ).ready(function() {
         var R = Math.floor((Math.random() * 256));
         var G = Math.floor((Math.random() * 256));
         var B = Math.floor((Math.random() * 256));
-        console.log("t");
         $('#jqueryPage').css('background-color','rgb('+R +','+G+','+B+')');
+        $('.active').css('background-color','rgb('+R +','+G+','+B+')');
+    });
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 150){
+            $("#navigation").addClass("navFix");
+        }
+        else{
+            $("#navigation").removeClass("navFix");
+        }
     });
 
 });
