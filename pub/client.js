@@ -14,6 +14,8 @@ $( document ).ready(function() {
         var comm = {};
         comm.Comment = $("#comment").val();
         comm.User = $("#user").val();
+        $("comment").val(" ");
+        $("user").val(" ");
         socket.emit("addCom", comm);
     });
 

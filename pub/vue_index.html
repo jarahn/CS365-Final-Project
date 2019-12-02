@@ -79,8 +79,15 @@
             <img id="pic" v-bind:src="img">
             <br>
             <br>
+            <input type="text" id="fah" placeholder="Fahrenheit" v-bind:value="tempStr"></input>
+            <input type="text" id="cel" placeholder="Celcius" v-bind:value="tempStr"></input>
+            <button type="button" v-on:click="convertF" class="btn btn-primary">Convert To Fahrenheit</button>
+            <button type="button" v-on:click="convertC" class="btn btn-primary">Convert To Celcius</button>
+            <br>
+            <br>
 
             <h3><mark>How It's Made:</mark></h3>
+            <h5>Picture Generator</h5>
             <p>This picture generator is made by getting a random index in a predefined array of images <small class="text-muted">(on the button push)</small>,
                 then displaying the image that lives at that index.</p>
             <p>To reactively change the "src" of an image element with Vue, all you need is "v-bind:src=". Replacing the normal

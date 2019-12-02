@@ -45,9 +45,9 @@
             page for more details).</small>
             <br>
             2. Use the node package manager <small class="text-muted">(npm)</small> to install socket.io on the server: -> on the command line, in your project directory, 
-            run the command "npm install --save socket.io-client"  
+            run the command "npm install --save socket.io".  
             <br>
-            3. Client: include "/socket.io/socket.io.js" as a script in the html file whose elements cause client server communication.
+            3. Client: include "/socket.io/socket.io.js" as a script in the html file whose elements cause client server communication. Or run the command "npm install --save socket.io-client".
             <br>
             4. Click the Socket.io logo at the top of the page for specific instructions on using socket.io as well as combining it with:
             <br>
@@ -96,11 +96,18 @@
                 </tr>
             </tfoot>
         </table>
-        <button id="addComm">Add Comment</button>
+        <button id="addComm" class="btn btn-primary">Add Comment</button>
         <br>
         <br>
 
         <h4><mark>How It's Made:</mark></h4>
+        <p>This comment section is made by using a simple html table for the display, a database to store the previous comments,
+             and a button that triggers client server communications.</p>
+        <p>-The database stores comments made by any client during any session and permanently displays them on the webpage.</p>
+        <p>-The "Add Comment" button first checks that all required fields are filled in, then triggers the client function for this button click.
+             This sends the fields to the server.
+            The server then does a small amount of input validation, adds the user and comment as a new database entry, and tells 
+            all clients to display the updated comment section.</p>
 
 
 

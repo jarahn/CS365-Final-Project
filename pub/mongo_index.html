@@ -26,7 +26,7 @@
         </ul>
     </div>
     <div class="mx-auto shadow-lg p-3 mb-5 bg-white rounded" style="width:75% ">
-    <img src="img/MongoDB_logo_small.png" class="mx-2 rounder float-right">
+    <a href="https://www.mongodb.com/" target="_blank"><img src="img/MongoDB_logo_small.png" class="mx-2 rounder float-right"></a>
     <h1 class="font-weight-bold">MongoDB</h1>
     <br>
     <h2 class="font-weight-bold">An open source database solution</h2>
@@ -35,10 +35,10 @@
     </p>
 
     <h2>Setup</h2>
-    <p>Mongo db has multiple version, the two most prominent being the community version and enterprise version
-    the community version is the free version that we want.
+    <p>Mongo db has multiple version, the two most prominent being the community version and enterprise version.
+    The community version is the free version that we want.
     <a href="https://www.mongodb.com/download-center/community" target="_blank">To download the community version click here.</a>
-    In order to get mongo running prorperly we have to add the mongo directory to the windows filepath so keep track of whree you saved mongo to. This allows for us to run mongo commands from the cmd line.
+    In order to get mongo running prorperly we have to add the mongo directory to the windows filepath. This allows your computer to keep track of where you saved mongo. Which in turn facilitates running mongo commands from the command line.
     </p>
     <h2>Adding to Filepath(on windows)</h2>
     <p>
@@ -51,8 +51,8 @@
     <br>
     3. You should see a display box with file paths like so
     click on the entry titled "path" and hit the edit button. Once the "edit environment variables" window is open, click underneath the very last entry on the list, then select new from the right hand side of the screen.
-    add the path to your newly downloaded mongoDB directory here. Once you've added the path hit okay. You should now be able to run the mongo server!
-    </p>
+    add the path to your newly downloaded mongoDB directory here. Once you've added the path hit okay. <small class="text-muted">(you may also need to add a folder titled "data" with a folder titled "db" inside of it to your C path.
+     For example, the path would be: "C:\data\db")</small> You should now be able to run the mongo server!</p>
     <h2>Database Structure</h2>
     <p>Mongo db entries are modeled like so:
     A database has collections,
@@ -74,7 +74,14 @@
     <small class="font-weight-bold">*</small>
     <small class="font-weight-bold">*</small>
     </p>
-    <h2>Useful commands</h2>
+    <h2>Useful Commands:</h2>
+    <p>-.find({key: value}) <small class="text-muted">note: key and value are both optional.</small></p>
+    <p>-.count() <small class="text-muted">returns the number of documents in a collection.</small></p>
+    <p>-.delete() <small class="font-weight-bold">OR</small> .deleteOne()</p>
+    <p>-.insert() <small class="font-weight-bold">OR</small> .insertOne()</p>
+    <p>-.update() <small class="text-muted">allows you to update one or more documents.</small></p>
+    <p class="font-weight-bold">*Click the mongodb logo at the top of the page for a complete list of commands and their corresponding docs*</p>
+
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
