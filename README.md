@@ -6,7 +6,7 @@ A web application/guide to cs365
 Created by Peter Paisley and Jacob Rahn
 -with a special thanks to Dr. Kow for his assistance.
 
-#Setup
+# Setup
 -Clone this repository
 -Either start up a server (by following the instructions on the node and socket.io pages) or run it locally by opening the
 index.html file in a web browser.
